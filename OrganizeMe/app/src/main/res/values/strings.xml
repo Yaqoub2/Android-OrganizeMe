@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OrganizeMe</string>
+    <string name="text_label_1">Day</string>
+    <string name="text_label_2">Hour</string>
+    <string name="ST">TextView</string>
+    <string name="DL">TextView</string>
+    <string name="DF">TextView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

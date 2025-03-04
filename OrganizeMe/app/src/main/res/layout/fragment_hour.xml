@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.HourFragment"
+    tools:layout_editor_absoluteX="-14dp"
+    tools:layout_editor_absoluteY="349dp">
+
+    <TextView
+        android:id="@+id/labelHST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hour Screentime"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/labelhMIn"
+        app:layout_constraintEnd_toStartOf="@+id/HST"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/HST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/hMIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labelHST"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/labelhMIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimum Focus"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/labelnPU"
+        app:layout_constraintEnd_toStartOf="@+id/hMIn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelHST"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/hMIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/nPU"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labelhMIn"
+        app:layout_constraintTop_toBottomOf="@+id/HST"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/labelnPU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Ups"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/labelIF"
+        app:layout_constraintEnd_toStartOf="@+id/nPU"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelhMIn"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/nPU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/IF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labelnPU"
+        app:layout_constraintTop_toBottomOf="@+id/hMIn"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/labelIF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Increasing Factor"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/labelFocus"
+        app:layout_constraintEnd_toStartOf="@+id/IF"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelnPU"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/IF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Focus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labelIF"
+        app:layout_constraintTop_toBottomOf="@+id/nPU"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/Focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labelFocus"
+        app:layout_constraintTop_toBottomOf="@+id/IF"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/labelFocus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Focus"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Focus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelIF"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
